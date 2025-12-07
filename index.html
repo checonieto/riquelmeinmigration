@@ -1,0 +1,1056 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riquelme Immigration Consulting | Trusted Canadian Immigration Services</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-red: #C8102E; /* Canadian red */
+            --primary-white: #FFFFFF; /* Canadian white */
+            --dark-blue: #1A365D; /* Professional blue */
+            --light-blue: #E8F1FF;
+            --gold-accent: #D4AF37; /* Accent color */
+            --dark-gray: #2C2C2C;
+            --light-gray: #F5F5F5;
+            --medium-gray: #6B7280;
+            --transition: all 0.3s ease;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.6;
+            color: var(--dark-gray);
+            background-color: var(--primary-white);
+            overflow-x: hidden;
+        }
+        
+        h1, h2, h3, h4 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 600;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        /* Header Styles */
+        header {
+            background-color: var(--primary-white);
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.2rem 0;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+        }
+        
+        .logo-img {
+            height: 60px;
+            margin-right: 10px;
+        }
+        
+        .logo-text {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--dark-blue);
+        }
+        
+        .logo-text span {
+            color: var(--primary-red);
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+        
+        .nav-links li {
+            margin-left: 2rem;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: var(--dark-gray);
+            font-weight: 500;
+            font-size: 1.05rem;
+            padding: 0.5rem 0;
+            position: relative;
+            transition: var(--transition);
+        }
+        
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--primary-red);
+            transition: width 0.3s ease;
+        }
+        
+        .nav-links a:hover {
+            color: var(--primary-red);
+        }
+        
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+        
+        .header-contact {
+            display: flex;
+            align-items: center;
+        }
+        
+        .header-contact a {
+            background-color: var(--primary-red);
+            color: var(--primary-white);
+            padding: 0.6rem 1.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+        }
+        
+        .header-contact a:hover {
+            background-color: var(--dark-blue);
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(200, 16, 46, 0.2);
+        }
+        
+        .header-contact i {
+            margin-right: 8px;
+        }
+        
+        .mobile-menu-btn {
+            display: none;
+            font-size: 1.5rem;
+            background: none;
+            border: none;
+            color: var(--dark-gray);
+            cursor: pointer;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(26, 54, 93, 0.85), rgba(26, 54, 93, 0.9)), url('images/hero-background.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: var(--primary-white);
+            padding: 6rem 0;
+            position: relative;
+        }
+        
+        .hero-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .hero-text {
+            flex: 1;
+            padding-right: 3rem;
+        }
+        
+        .hero-image {
+            flex: 1;
+            text-align: center;
+        }
+        
+        .hero-image img {
+            max-width: 100%;
+            max-height: 400px;
+            border-radius: 10px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+            object-fit: cover;
+        }
+        
+        .hero h1 {
+            font-size: 3.2rem;
+            margin-bottom: 1.2rem;
+            line-height: 1.2;
+        }
+        
+        .hero h1 span {
+            color: var(--gold-accent);
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            max-width: 600px;
+            opacity: 0.9;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: var(--primary-red);
+            color: var(--primary-white);
+            padding: 0.9rem 2.2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.05rem;
+            border: 2px solid var(--primary-red);
+            transition: var(--transition);
+            cursor: pointer;
+        }
+        
+        .btn:hover {
+            background-color: transparent;
+            color: var(--primary-white);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(200, 16, 46, 0.3);
+        }
+        
+        .btn-outline {
+            background-color: transparent;
+            color: var(--primary-white);
+            border-color: var(--primary-white);
+            margin-left: 1rem;
+        }
+        
+        .btn-outline:hover {
+            background-color: var(--primary-white);
+            color: var(--dark-blue);
+        }
+        
+        /* Services Section */
+        .services {
+            padding: 5rem 0;
+            background-color: var(--light-gray);
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 3.5rem;
+            position: relative;
+        }
+        
+        .section-title h2 {
+            font-size: 2.5rem;
+            color: var(--dark-blue);
+            display: inline-block;
+        }
+        
+        .section-title h2::after {
+            content: '';
+            position: absolute;
+            width: 80px;
+            height: 3px;
+            background-color: var(--primary-red);
+            bottom: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .service-card {
+            background-color: var(--primary-white);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: var(--transition);
+            padding: 2rem;
+            text-align: center;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .service-icon {
+            width: 80px;
+            height: 80px;
+            background-color: var(--light-blue);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            color: var(--primary-red);
+            font-size: 2rem;
+            transition: var(--transition);
+        }
+        
+        .service-card:hover .service-icon {
+            background-color: var(--primary-red);
+            color: var(--primary-white);
+            transform: rotate(15deg);
+        }
+        
+        .service-image {
+            height: 180px;
+            width: 100%;
+            overflow: hidden;
+            border-radius: 8px;
+            margin-bottom: 1.5rem;
+        }
+        
+        .service-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+        
+        .service-card:hover .service-image img {
+            transform: scale(1.05);
+        }
+        
+        .service-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--dark-blue);
+        }
+        
+        /* Why Choose Us Section */
+        .why-choose-us {
+            padding: 5rem 0;
+            background-color: var(--primary-white);
+        }
+        
+        .why-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .why-text {
+            flex: 1;
+            padding-right: 3rem;
+        }
+        
+        .why-image {
+            flex: 1;
+            text-align: center;
+        }
+        
+        .why-image img {
+            max-width: 100%;
+            max-height: 500px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            object-fit: cover;
+        }
+        
+        .why-choose-us h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--dark-blue);
+        }
+        
+        .why-choose-us h2 span {
+            color: var(--primary-red);
+        }
+        
+        .features {
+            margin-top: 2rem;
+        }
+        
+        .feature {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+        
+        .feature-icon {
+            background-color: var(--light-blue);
+            width: 50px;
+            height: 50px;
+            min-width: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 1rem;
+            color: var(--primary-red);
+            font-size: 1.2rem;
+            transition: var(--transition);
+        }
+        
+        .feature:hover .feature-icon {
+            background-color: var(--primary-red);
+            color: var(--primary-white);
+        }
+        
+        .feature-text h4 {
+            font-size: 1.2rem;
+            margin-bottom: 0.3rem;
+        }
+        
+        /* Stats Section */
+        .stats {
+            padding: 4rem 0;
+            background-color: var(--dark-blue);
+            color: var(--primary-white);
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            text-align: center;
+        }
+        
+        .stat-item h3 {
+            font-size: 3rem;
+            color: var(--gold-accent);
+            margin-bottom: 0.5rem;
+        }
+        
+        .stat-item p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+        
+        /* Contact Section */
+        .contact {
+            padding: 5rem 0;
+            background-color: var(--light-gray);
+        }
+        
+        .contact-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .contact-info {
+            flex: 1;
+            padding-right: 3rem;
+        }
+        
+        .contact-action {
+            flex: 1;
+            text-align: center;
+            background-color: var(--primary-white);
+            padding: 3rem;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+        }
+        
+        .contact-info h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--dark-blue);
+        }
+        
+        .contact-info h2 span {
+            color: var(--primary-red);
+        }
+        
+        .contact-details {
+            margin-top: 2rem;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 1.5rem;
+        }
+        
+        .contact-icon {
+            background-color: var(--light-blue);
+            width: 50px;
+            height: 50px;
+            min-width: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 1rem;
+            color: var(--primary-red);
+            font-size: 1.2rem;
+        }
+        
+        .social-contact {
+            display: flex;
+            margin-top: 2rem;
+        }
+        
+        .social-contact a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 45px;
+            height: 45px;
+            background-color: var(--dark-blue);
+            border-radius: 50%;
+            margin-right: 1rem;
+            color: var(--primary-white);
+            font-size: 1.2rem;
+            transition: var(--transition);
+        }
+        
+        .social-contact a:hover {
+            background-color: var(--primary-red);
+            transform: translateY(-5px);
+        }
+        
+        .email-btn {
+            background-color: var(--primary-red);
+            color: var(--primary-white);
+            border: none;
+            padding: 1.2rem 2.5rem;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            transition: var(--transition);
+            box-shadow: 0 5px 15px rgba(200, 16, 46, 0.2);
+            margin-top: 1.5rem;
+        }
+        
+        .email-btn i {
+            margin-right: 10px;
+            font-size: 1.4rem;
+        }
+        
+        .email-btn:hover {
+            background-color: var(--dark-blue);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(200, 16, 46, 0.3);
+        }
+        
+        .contact-action h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            color: var(--dark-blue);
+        }
+        
+        .contact-action p {
+            color: var(--medium-gray);
+            margin-bottom: 2rem;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--dark-blue);
+            color: var(--primary-white);
+            padding: 3rem 0 2rem;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .footer-column h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--primary-white);
+            position: relative;
+            padding-bottom: 0.8rem;
+        }
+        
+        .footer-column h3::after {
+            content: '';
+            position: absolute;
+            width: 40px;
+            height: 2px;
+            background-color: var(--primary-red);
+            bottom: 0;
+            left: 0;
+        }
+        
+        .footer-links {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 0.8rem;
+        }
+        
+        .footer-links a {
+            color: #ccc;
+            text-decoration: none;
+            transition: var(--transition);
+        }
+        
+        .footer-links a:hover {
+            color: var(--primary-red);
+            padding-left: 5px;
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #aaa;
+            font-size: 0.9rem;
+        }
+        
+        .footer-bottom span {
+            color: var(--primary-red);
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            .hero-content, .why-content, .contact-content {
+                flex-direction: column;
+            }
+            
+            .hero-text, .why-text, .contact-info {
+                padding-right: 0;
+                margin-bottom: 3rem;
+            }
+            
+            .hero h1 {
+                font-size: 2.8rem;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background-color: var(--primary-white);
+                flex-direction: column;
+                padding: 1.5rem;
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            }
+            
+            .nav-links.active {
+                display: flex;
+            }
+            
+            .nav-links li {
+                margin: 0.8rem 0;
+            }
+            
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            .header-contact {
+                display: none;
+            }
+            
+            .hero h1 {
+                font-size: 2.4rem;
+            }
+            
+            .section-title h2 {
+                font-size: 2rem;
+            }
+            
+            .btn-container {
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            .btn-outline {
+                margin-left: 0;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .hero p {
+                font-size: 1rem;
+            }
+            
+            .section-title h2 {
+                font-size: 1.8rem;
+            }
+            
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <img src="images/logorimm.jpg" alt="Riquelme Immigration Consulting Logo" class="logo-img">
+                <div class="logo-text">Riquelme <span>Immigration</span></div>
+            </a>
+            
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#why-us">Why Choose Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            
+            <div class="header-contact">
+                <a href="tel:7788637160"><i class="fas fa-phone-alt"></i> 778.863.7160</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1>First Class <span>Immigration Services</span> From Beginning to End</h1>
+                <p>We are committed to give you first class service on your Immigration needs from beginning to end. Over 18 years of legal and immigration experience.</p>
+                <div class="btn-container">
+                    <a href="#contact" class="btn">Free Consultation</a>
+                    <a href="#services" class="btn btn-outline">Our Services</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="images/signing-contract.jpg" alt="Professional signing immigration contract">
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Immigration Services</h2>
+            </div>
+            
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="images/service-immigration.jpg" alt="Permanent Residence Immigration Service">
+                    </div>
+                    <div class="service-icon">
+                        <i class="fas fa-file-contract"></i>
+                    </div>
+                    <h3>Permanent Residence</h3>
+                    <p>Comprehensive assistance with Express Entry, Provincial Nominee Programs, Family Sponsorship, and other pathways to Canadian permanent residence.</p>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="images/service-visa.jpg" alt="Temporary Visa Services">
+                    </div>
+                    <div class="service-icon">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3>Temporary Visas</h3>
+                    <p>Expert guidance on visitor visas, study permits, work permits, and other temporary resident applications for Canada.</p>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="images/service-legal.jpg" alt="Legal Consultation Services">
+                    </div>
+                    <div class="service-icon">
+                        <i class="fas fa-balance-scale"></i>
+                    </div>
+                    <h3>Legal Consultation</h3>
+                    <p>Professional legal advice on complex immigration matters, appeals, and inadmissibility issues from experienced consultants.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose-us" id="why-us">
+        <div class="container why-content">
+            <div class="why-text">
+                <h2>Why Should You <span>Choose Us?</span></h2>
+                <p>With over 18 years of legal and immigration experience, we are committed to excellence in all the services we offer. Our client's success rate is our best advertising.</p>
+                
+                <div class="features">
+                    <div class="feature">
+                        <div class="feature-icon">
+                            <i class="fas fa-globe-americas"></i>
+                        </div>
+                        <div class="feature-text">
+                            <h4>Global Consultation</h4>
+                            <p>We have the ability to consult clients anywhere in the world.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature">
+                        <div class="feature-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="feature-text">
+                            <h4>18+ Years Experience</h4>
+                            <p>Over 18 years of legal and immigration experience.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature">
+                        <div class="feature-icon">
+                            <i class="fas fa-language"></i>
+                        </div>
+                        <div class="feature-text">
+                            <h4>Bilingual Service</h4>
+                            <p>We are fluent in English and Spanish for your convenience.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature">
+                        <div class="feature-icon">
+                            <i class="fas fa-medal"></i>
+                        </div>
+                        <div class="feature-text">
+                            <h4>Committed to Excellence</h4>
+                            <p>We are committed to excellence in all the services we offer.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="why-image">
+                <img src="images/glass-buildings.jpg" alt="Modern office buildings for professional immigration services">
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <h3>18+</h3>
+                    <p>Years of Immigration Experience</p>
+                </div>
+                <div class="stat-item">
+                    <h3>95%</h3>
+                    <p>Client Success Rate</p>
+                </div>
+                <div class="stat-item">
+                    <h3>2000+</h3>
+                    <p>Clients Served Worldwide</p>
+                </div>
+                <div class="stat-item">
+                    <h3>2</h3>
+                    <p>Languages (English & Spanish)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contact Us</h2>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2>Get In <span>Touch</span></h2>
+                    <p>For any inquiries, please call or email us. Our client's satisfaction is our main goal.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div>
+                                <h4>Direct Line</h4>
+                                <p><a href="tel:7788637160" style="color: var(--dark-blue); text-decoration: none; font-weight: 600;">778.863.7160</a></p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4>Email</h4>
+                                <p><a href="mailto:ggriquelme@gmail.com" style="color: var(--dark-blue); text-decoration: none; font-weight: 600;">ggriquelme@gmail.com</a></p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h4>Office Address</h4>
+                                <p>Suite 102-5623 Imperial Street<br>Burnaby BC, V5J 1G1<br>Canada</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social-contact">
+                        <a href="https://wa.me/17788637160" title="WhatsApp" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" title="Facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" title="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="#" title="LinkedIn" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="contact-action">
+                    <h3>Ready to Start Your Immigration Journey?</h3>
+                    <p>Contact us today for a free consultation. Our experienced team is ready to help you with all your immigration needs.</p>
+                    
+                    <a href="mailto:ggriquelme@gmail.com?subject=Immigration Consultation Request&body=Hello, I would like to request a consultation regarding immigration services." class="email-btn">
+                        <i class="fas fa-paper-plane"></i> Send Us an Email
+                    </a>
+                    
+                    <p style="margin-top: 1.5rem; font-size: 0.9rem; color: var(--medium-gray);">
+                        We typically respond within 24 hours during business days.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Riquelme Immigration</h3>
+                    <p>Providing first class immigration consulting services with over 18 years of experience. We are committed to excellence in all services we offer.</p>
+                    <div class="social-contact" style="margin-top: 1.5rem;">
+                        <a href="https://wa.me/17788637160" title="WhatsApp" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" title="Facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" title="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="#" title="LinkedIn" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#why-us">Why Choose Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Our Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Permanent Residence</a></li>
+                        <li><a href="#">Temporary Visas</a></li>
+                        <li><a href="#">Work Permits</a></li>
+                        <li><a href="#">Study Permits</a></li>
+                        <li><a href="#">Legal Consultation</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contact Info</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt"></i> Suite 102-5623 Imperial Street, Burnaby BC, V5J 1G1</li>
+                        <li><i class="fas fa-phone"></i> <a href="tel:7788637160" style="color: #ccc; text-decoration: none;">778.863.7160</a></li>
+                        <li><i class="fas fa-envelope"></i> <a href="mailto:ggriquelme@gmail.com" style="color: #ccc; text-decoration: none;">ggriquelme@gmail.com</a></li>
+                        <li><i class="fas fa-clock"></i> Mon-Fri: 9am-6pm PST</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 Riquelme Immigration Consulting. All rights reserved. | Made with <span>♥</span> in Canada</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const navLinks = document.getElementById('navLinks');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            mobileMenuBtn.innerHTML = navLinks.classList.contains('active') 
+                ? '<i class="fas fa-times"></i>' 
+                : '<i class="fas fa-bars"></i>';
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if(targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if(targetElement) {
+                    // Close mobile menu if open
+                    navLinks.classList.remove('active');
+                    mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+                    
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Add hover effect to service cards
+        const serviceCards = document.querySelectorAll('.service-card');
+        serviceCards.forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-10px)';
+            });
+            
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0)';
+            });
+        });
+        
+        // WhatsApp link opens in new tab
+        document.querySelectorAll('a[href*="wa.me"]').forEach(link => {
+            link.addEventListener('click', function(e) {
+                // Allow default behavior - opens WhatsApp
+            });
+        });
+    </script>
+</body>
+</html>
